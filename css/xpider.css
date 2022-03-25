@@ -602,7 +602,7 @@ ul {
 @media (max-width: 991px) {
     .communication {
         height: unset;
-        padding-top: calc(var(--padding-top) /3 *2);
+        padding-top: calc(var(--padding-top) * .4);
         padding-bottom: calc(var(--padding-bottom) / 2);
     }
 }
@@ -657,6 +657,7 @@ ul {
     font-weight: bold;
     position: absolute;
     font-size: 18px;
+    padding-bottom: 8px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -675,3 +676,63 @@ ul {
 
 
 /* end Communication section */
+
+
+/* start Support section */
+
+.support {
+    padding-top: calc(var(--padding-top) * 1.6);
+}
+
+@media (max-width: 993px) {
+    .support {
+        padding-top: calc(var(--padding-top) * .6);
+    }
+}
+
+.support .boxes {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 993px) {
+    .support .boxes .image {
+        display: none;
+    }
+}
+
+.support .boxes .box {
+    max-width: 366px;
+    margin-bottom: 50px;
+}
+
+.support .boxes .box .head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+@media (max-width: 993px) {
+    .support .boxes {
+        text-align: center;
+    }
+    .support .boxes .box .head {
+        flex-direction: column;
+    }
+}
+
+.support .boxes .box h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.support .boxes .box p {
+    color: var(--secondary-typing);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* end Support section */
