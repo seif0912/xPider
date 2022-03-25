@@ -301,13 +301,13 @@ ul {
 
 @media (max-width: 1400px) {
     .main .info {
-        margin: 70px auto;
+        margin: auto;
     }
 }
 
 @media (max-width: 787px) {
     .main .info {
-        margin: a;
+        margin: 50% auto;
     }
 }
 
@@ -515,6 +515,7 @@ ul {
     background-color: var(--main-color);
     height: 700px;
     position: relative;
+    margin-bottom: 0;
 }
 
 .stat .title h3 {
@@ -580,3 +581,97 @@ ul {
 
 
 /* end Statistics section */
+
+
+/* start Communication section */
+
+.communication {
+    height: 850px;
+    background-color: #151C32;
+    margin-top: 0;
+    padding-top: calc(var(--padding-top) + 100px);
+    z-index: -1;
+}
+
+@media (max-width: 1150px) {
+    .communication {
+        padding-top: calc(var(--padding-top) /3 *2);
+    }
+}
+
+@media (max-width: 991px) {
+    .communication {
+        height: unset;
+        padding-top: calc(var(--padding-top) /3 *2);
+        padding-bottom: calc(var(--padding-bottom) / 2);
+    }
+}
+
+.communication .boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.communication .boxes .box {
+    max-width: 411px;
+    background-color: white;
+    text-align: center;
+}
+
+.communication .boxes .box .pic {
+    background-color: #F0F3FF;
+    padding: 15px;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.communication .boxes .box h3 {
+    color: #2C2E30;
+}
+
+.communication .boxes .box h3 span {
+    color: var(--main-color);
+}
+
+.communication .boxes .box p {
+    color: #54565A;
+    padding: 0 50px;
+    line-height: 1.7;
+}
+
+.communication .boxes .box .link {
+    height: 120px;
+    position: relative;
+}
+
+.communication .boxes .box .link a {
+    color: #2C2E30;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.communication .boxes .box .link a i {
+    margin-left: 10px;
+    transition: var(--main-transition);
+}
+
+.communication .boxes .box .link a:hover i {
+    color: var(--main-color);
+    margin-left: 20px;
+}
+
+
+/* end Communication section */
