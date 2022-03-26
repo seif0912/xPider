@@ -796,6 +796,13 @@ ul {
     margin-top: 15px;
 }
 
+@media (max-width: 450px) {
+    .about .content .image {
+        width: 350px;
+        overflow: hidden;
+    }
+}
+
 .about .content .image .pics {
     margin: auto;
     height: 10px;
@@ -818,3 +825,111 @@ ul {
 
 
 /* end About section */
+
+
+/* start Subscribe section */
+
+.subscribe {
+    text-align: center;
+    background-color: var(--main-color);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe .form {
+    max-width: 580px;
+}
+
+.subscribe .form h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+@media (max-width:787px) {
+    .subscribe {
+        height: 500px;
+    }
+    .subscribe .form h1 {
+        font-size: 28px;
+    }
+}
+
+.subscribe .form p {
+    font-size: 18px;
+    color: #C5D0E6;
+    line-height: 1.8;
+}
+
+@media (max-width:787px) {
+    .subscribe .form p {
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+
+.subscribe .form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe .form input[type="email"] {
+    border: none;
+    height: 75px;
+    padding-left: 25px;
+    width: 328px;
+    font-size: 18px;
+}
+
+.subscribe .form input[type="email"]:focus {
+    outline: none;
+}
+
+.subscribe .form input[type="submit"] {
+    border: none;
+    border-left: 3px solid #ddd;
+    height: 75px;
+    background-color: white;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 16px;
+    width: 195px;
+    transition: var(--main-transition);
+}
+
+.subscribe .form input[type="submit"]:focus {
+    outline: none;
+}
+
+.subscribe .form input[type="submit"]:hover {
+    background-color: #f2f2f2;
+}
+
+@media (max-width:787px) {
+    .subscribe form {
+        gap: 15px
+    }
+    .subscribe .form input[type="submit"] {
+        width: 180px;
+        height: 60px;
+        border-radius: 50px;
+        border-radius: none;
+    }
+    .subscribe .form input[type="email"] {
+        height: 65px;
+        border-radius: 50px;
+    }
+}
+
+.subscribe .form h3 {
+    font-size: 14px;
+    color: #C5D0E6;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+
+/* end Subscribe section */
