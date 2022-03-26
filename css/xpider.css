@@ -11,6 +11,13 @@
 
 @font-face {
     font-family: 'aileron';
+    src: url('../aileron/Aileron-LightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'aileron';
     src: url('../aileron/Aileron-Regular.otf') format('opentype');
     font-weight: 400;
 }
@@ -682,11 +689,13 @@ ul {
 
 .support {
     padding-top: calc(var(--padding-top) * 1.6);
+    padding-bottom: var(--padding-bottom);
 }
 
 @media (max-width: 993px) {
     .support {
         padding-top: calc(var(--padding-top) * .6);
+        padding-bottom: calc(var(--padding-bottom) * .3);
     }
 }
 
@@ -736,3 +745,76 @@ ul {
 
 
 /* end Support section */
+
+
+/* start About section */
+
+.about {
+    background-color: #151C32;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+
+@media (max-width: 993px) {
+    .about {
+        padding-top: calc(var(--padding-top) * .6);
+        padding-bottom: calc(var(--padding-bottom) * .3);
+    }
+}
+
+.about .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.about .content .text {
+    max-width: 420px;
+}
+
+.about .content .text q {
+    font-size: 28px;
+    line-height: 1.8;
+    font-weight: 200;
+    font-style: italic;
+    color: #C9CDD5;
+}
+
+.about .content .text h2 {
+    font-size: 21px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.about .content .text h4 {
+    color: var(--secondary-typing);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.about .content .image .pics {
+    margin: auto;
+    height: 10px;
+    margin-top: 15px;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+.about .content .image .pics div {
+    width: 77px;
+    height: 9;
+    border-radius: 5px;
+    background-color: var(--secondary-typing);
+}
+
+.about .content .image .pics div:first-child {
+    background-color: var(--main-color);
+}
+
+
+/* end About section */
