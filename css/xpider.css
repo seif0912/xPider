@@ -148,7 +148,7 @@ ul {
 
 ::-webkit-scrollbar{
     background: transparent;
-    width: 15px;
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb{
     background-color:#2f5beaa4;
@@ -282,6 +282,7 @@ ul {
     transition: 0.25s;
     display: none;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .burger span {
@@ -321,7 +322,8 @@ ul {
     right: 0px;
     transition: 0.3s;
     height: 350px;
-    background-color: rgba(0, 0, 0, 0.945);
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
 }
 
 .main header nav.nav-clicked::after{
@@ -334,29 +336,11 @@ ul {
     border: 15px solid;
     border-color: transparent transparent rgba(0, 0, 0, 0.945) transparent;
 }
-/*   blur background
-.main header nav.clicked::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.795);
-    filter: blur(13px);
-}
-*/
+
 .main header nav.nav-clicked ul{
     flex-direction: column;
     align-items: center;
 }
-
-.main header nav.nav-clicked a{
-    margin: ;
-}
-
-
 
 .main .container{
     position: relative;
@@ -503,6 +487,7 @@ ul {
     border-top: 1px solid #161D36;
     padding-top: 120px;
     margin-top: 50px;
+    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
